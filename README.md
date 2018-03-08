@@ -20,7 +20,7 @@
 <p><img src="images/wechat-qrcode.jpg" width="128" height="128" /></p>
 
 <p>加入我的QQ群</p>
-<p><img src="https://raw.githubusercontent.com/bmqy/taomi-tools/master/images/temp_qrcode_share_663099879.png" width="540" height="740" /></p>
+<p><img src="https://raw.githubusercontent.com/bmqy/taomi-tools/master/images/temp_qrcode_share_663099879.png" width="200" height="274" /></p>
 
         
 ### 原作者交流QQ群
