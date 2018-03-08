@@ -3,5 +3,5 @@
  */
 
 $(function(){
-    window.location.href = 'buy.html'
+    window.location.href = 'sale.html'
 });

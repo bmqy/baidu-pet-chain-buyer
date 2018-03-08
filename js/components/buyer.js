@@ -169,7 +169,7 @@ var Buyer = {
         Buyer.startBuyProcess();
         var captcha = Configurator.consumeLogCaptcha();
         Buyer.displayBuyModal(toBuy.degree, toBuy.pet, captcha);
-        
+
         Buyer.TryedBuyMap[toBuy.pet.id] = true;
     },
 

@@ -6,27 +6,27 @@ var Configurator = {
     defaultDegreeConf: [{
         desc: '普通',
         buyAmount: 100,
-        saleAmount: 0,
+        saleAmount: 5000,
     },{
         desc: '稀有',
         buyAmount: 100,
-        saleAmount: 0,
+        saleAmount: 1000000,
     },{
         desc: '卓越',
         buyAmount: 100,
-        saleAmount: 0,
+        saleAmount: 666666666,
     },{
         desc: '史诗',
         buyAmount: 100,
-        saleAmount: 0,
+        saleAmount: 777777777,
     },{
         desc: '神话',
         buyAmount: 100,
-        saleAmount: 0,
+        saleAmount: 888888888,
     },{
         desc: '传说',
         buyAmount: 100,
-        saleAmount: 0,
+        saleAmount: 999999999,
     }],
 	getDegreeConf : function() {
         return Utils.getStorage("degreeConf", true) || Configurator.defaultDegreeConf;
@@ -38,6 +38,7 @@ var Configurator = {
             th += '<tr class="confItem">\
                     <td><span>' + v.desc + '</span> <input type="text" name="id" value="' + k + '" style="display:none;" /></td>\
                     <td><input type="text" name="buyAmount" value="' + v.buyAmount + '" class="editBox input-large" /></td>\
+                    <td><input type="text" name="saleAmount" value="' + v.saleAmount + '" class="editBox input-large" /></td>\
                 </tr>';
         });
         $(th).appendTo($("#degreeConf"));
@@ -51,8 +52,10 @@ var Configurator = {
 
                 var id = $(item).find("input[name=id]").val();
                 var buyAmount = $(item).find("input[name=buyAmount]").val();
+                var saleAmount = $(item).find("input[name=saleAmount]").val();
 
                 degreeConf[id].buyAmount = buyAmount;
+                degreeConf[id].saleAmount = saleAmount;
             }
 			
             Utils.setStorage("degreeConf", degreeConf);
